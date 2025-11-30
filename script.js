@@ -39,5 +39,4 @@ document.addEventListener('DOMContentLoaded', function() {
             profileImg.style.transform = 'scale(1) rotateY(0) rotateX(0)';
         });
     }
-
-
+});
