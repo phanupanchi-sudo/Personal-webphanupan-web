@@ -146,3 +146,58 @@ footer {
     font-size: 0.8rem;
     color: #64748b;
 }
+/* ============ Style สำหรับ Skills ============ */
+
+.skills-container {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.skills-container h3 {
+    font-size: 1rem;
+    color: #94a3b8;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* แบ่งเป็น 3 คอลัมน์ */
+    gap: 10px;
+}
+
+.skill-item {
+    background: rgba(30, 41, 59, 0.6);
+    padding: 15px 10px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.skill-item i {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    /* icon color is defined inline in HTML */
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.2));
+}
+
+.skill-item span {
+    font-size: 0.8rem;
+    color: #cbd5e1;
+    font-weight: 500;
+}
+
+/* Effect เมื่อเอาเมาส์ชี้ที่ Skill */
+.skill-item:hover {
+    background: rgba(56, 189, 248, 0.1);
+    border-color: var(--accent);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
